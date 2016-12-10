@@ -1,0 +1,27 @@
+if &compatible
+      set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Define bundles via Github repos
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'danro/rename.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'ervandew/supertab'
+Bundle "godlygeek/tabular"
+Bundle "msanders/snipmate.vim"
+Bundle 'scrooloose/nerdcommenter'
+Bundle "Lokaltog/vim-easymotion"
+Bundle 'tomasr/molokai'
+
+filetype on 
