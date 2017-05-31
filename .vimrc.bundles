@@ -10,18 +10,20 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Define bundles via Github repos
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-airline/vim-airline'
+Bundle 'vim-airline/vim-airline-themes'
+Bundle 'Lokaltog/powerline-fonts'
 Bundle 'danro/rename.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jiangmiao/auto-pairs'
-Bundle 'ervandew/supertab'
-Bundle "godlygeek/tabular"
-Bundle "msanders/snipmate.vim"
+Bundle 'exvim/ex-autocomplpop'
+Bundle 'godlygeek/tabular'
+Bundle 'tpope/vim-surround'
+Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdcommenter'
-Bundle "Lokaltog/vim-easymotion"
+Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tomasr/molokai'
 
 filetype on 

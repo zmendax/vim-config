@@ -58,7 +58,7 @@ nmap <C-H> <C-W>h
 let NERDTreeWinPos = "left"
 let NERDTreeWinSize = 30
 let NERDTreeChristmasTree = 1
-autocmd vimenter * if !argc() | NERDTree | endif " Automatically open a NERDTree if no files where specified
+"autocmd vimenter * if !argc() | NERDTree | endif " Automatically open a NERDTree if no files where specified
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif " Close vim if the only window left open is a NERDTree
 nmap <F5> :NERDTreeToggle<cr>
 
@@ -75,6 +75,13 @@ let g:EasyMotion_startofline = 0 " keep cursor column when JK motion"
 " Search results high light
 set hlsearch
 
-let g:Powerline_symbols = 'fancy'
+" airline
 set laststatus=2
-
+let g:airline_theme = "molokai"
+let g:airline_powerline_font=1
+let g:airline_section_b = '%{strftime("%Y-%m-%d")}'
+let g:airline_section_y = 'BN: %{bufnr("%")}'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+nmap <C-N> :bn<CR>
+nmap <C-P> :bp<CR>
