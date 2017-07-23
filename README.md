@@ -2,22 +2,23 @@
 
 ## Intro
 
-using vundle manage plugins, vundle settings and plugins define in file .vimrc.bundles, then settings for vim and those plugins are written in file .vimrc.
+using vim-plug manage plugins,  plugins define in .vimrc.plugged, then settings for vim and those plugins are written in file .vimrc.
 
 ## Usage
 
-1. **Install vundle**
+1. **Install vim-plug**
 
-   `$ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
+   `$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
-2. **Clone .vimrc and .vimrc.bundles in this project into ~**
+2. **Clone .vimrc and .vimrc.plugged in this project into ~**
 
-   `$ git clone https://github.com/zmendax/vim.git ~`
+   `$ git clone https://github.com/zmendax/zvim.git ~`
 
-   `$ copy .vimrc .vimrc.bundles ~`
+   `$ cp .vimrc* ~`
 
 3. **Install plugins**
 
-   `BundleInstall`
+   `PlugInstall`
 
    ​
