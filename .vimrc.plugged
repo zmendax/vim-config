@@ -2,19 +2,19 @@
 call plug#begin('~/.vim/plugged')
 
 " Define Plugs via Github repos
-Plug 'tomasr/molokai'
+Plug 'jnurmine/Zenburn'
 Plug 'Lokaltog/vim-powerline'
-Plug 'kien/ctrlp.vim'
 Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'exvim/ex-autocomplpop'
-Plug 'godlygeek/tabular'
-Plug 'tpope/vim-surround'
 Plug 'msanders/snipmate.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Lokaltog/vim-easymotion'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'fholgado/minibufexpl.vim'
+
+" python
+Plug 'tell-k/vim-autopep8'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()

@@ -3,8 +3,7 @@ set nocompatible
 
 " encoding
 set encoding=utf-8
-set fileencodings=ucs-bom,utf-8,cp936
-
+set fenc=utf-8
 
 " Highlight current line
 set cursorline
@@ -17,7 +16,7 @@ set hlsearch
 set incsearch
 set ignorecase
 
-set background=dark
+" set background=dark
 set t_Co=256
 set history=100     
 
@@ -33,7 +32,6 @@ filetype indent on
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set softtabstop=4
 
 
 " Plugins manage
@@ -47,7 +45,7 @@ filetype plugin indent on
 
 
 " Color scheme
-colorscheme molokai
+colorscheme zenburn
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -66,13 +64,6 @@ nmap <C-J> <C-W>j
 nmap <C-K> <C-W>k
 nmap <C-L> <C-W>l
 nmap <C-H> <C-W>h
-
-
-" vim-indent-guides
-let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_start_level=2
-" color block width
-let g:indent_guides_guide_size=1
 
 
 " Nerd Tree
@@ -103,3 +94,23 @@ let g:EasyMotion_startofline = 0 " keep cursor column when JK motion"
 
 " powerline
 let g:Powerline_colorscheme='solarized256'
+
+" indentLine
+let g:indentLine_char='|'
+let g:indentLine_enabled = 1
+" autopep8
+let g:autopep8_disable_show_diff=1
+
+" onekey run python
+map <F6> :Autopep8<CR> :w<CR> :call RunPython()<CR>
+function RunPython()
+    let mp = &makeprg
+    let ef = &errorformat
+    let exeFile = expand("%:t")
+    setlocal makeprg=python\ -u
+    set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
+    silent make %
+    copen
+    let &makeprg = mp
+    let &errorformat = ef
+endfunction
