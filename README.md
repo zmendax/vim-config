@@ -8,12 +8,11 @@ using vim-plug manage plugins,  plugins define in .vimrc.plugged, then settings 
 
 1. **Install vim-plug**
 
-   `$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+   `$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
 2. **Clone .vimrc and .vimrc.plugged in this project into ~**
 
-   `$ git clone https://github.com/zmendax/zvim.git ~`
+   `$ git clone https://github.com/zmendax/vim-config.git ~`
 
    `$ cp .vimrc* ~`
 
