@@ -1,0 +1,19 @@
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
+
+" Define Plugs via Github repos
+Plug 'jnurmine/Zenburn'
+Plug 'Lokaltog/vim-powerline'
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'jiangmiao/auto-pairs'
+Plug 'exvim/ex-autocomplpop'
+Plug 'msanders/snipmate.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'fholgado/minibufexpl.vim'
+Plug 'Yggdroot/indentLine'
+" python
+Plug 'tell-k/vim-autopep8'
+
+call plug#end()
