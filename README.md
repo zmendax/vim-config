@@ -1,23 +1,21 @@
-# My settings for vim
+# Minimal vimrc
 
 ## Intro
 
-using vim-plug manage plugins,  plugins define in .vimrc.plugged, then settings for vim and those plugins are written in file .vimrc.
+manage plugins with vim-plug
 
 ## Usage
 
-1. **Install vim-plug**
+### install vim-plug
 
-   `$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
+`$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim`
 
-2. **Clone .vimrc and .vimrc.plugged in this project into ~**
+### copy config files into ~/.vim
 
-   `$ git clone https://github.com/zmendax/vim-config.git ~`
+`$ git clone https://github.com/zmendax/vim-config ~/.vim`
 
-   `$ cp .vimrc* ~`
+`$ cp ~/.vim/vim-config/vim* ~/.vim/`
 
-3. **Install plugins**
+### install plugins
 
-   `PlugInstall`
-
-   ​
+`PlugInstall`
